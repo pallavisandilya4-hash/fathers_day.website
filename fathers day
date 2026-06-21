@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Father's Day ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💙</span>
+    <span>❤️</span>
+    <span>💖</span>
+    <span>💙</span>
+    <span>❤️</span>
+</div>
+
+<!-- PAGE 1 -->
+<section class="page active" id="page1">
+
+    <div class="glass hero-card">
+
+        <h1>Happy Father's Day ❤️</h1>
+
+        <p>
+            Today is all about celebrating the man who taught me
+            strength, kindness, and courage.
+        </p>
+
+        <button onclick="showPage(2)">
+            Begin Journey ✨
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="page2">
+
+    <div class="glass memory-box">
+
+        <img
+        src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1000"
+        alt="Father">
+
+        <h2>Beautiful Memories 📸</h2>
+
+        <p>
+            Every laugh, every lesson, every moment spent together
+            became a memory I treasure forever.
+        </p>
+
+        <button onclick="showPage(3)">
+            Continue →
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PAGE 3 -->
+<section class="page" id="page3">
+
+    <h2 class="section-title">
+        Why You're My Hero ⭐
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="emoji">🦸</div>
+            <h3>My First Hero</h3>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📚</div>
+            <h3>My Teacher</h3>
+        </div>
+
+        <div class="card">
+            <div class="emoji">❤️</div>
+            <h3>My Support</h3>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🌟</div>
+            <h3>My Inspiration</h3>
+        </div>
+
+    </div>
+
+    <button onclick="showPage(4)">
+        Read My Letter 💌
+    </button>
+
+</section>
+
+<!-- PAGE 4 -->
+<section class="page" id="page4">
+
+    <div class="glass letter">
+
+        <h2>A Letter To Dad 💌</h2>
+
+        <p>
+            Dear Dad,
+            <br><br>
+
+            Thank you for every sacrifice,
+            every lesson and every moment you stood beside me.
+
+            Your wisdom guides me,
+            your strength inspires me,
+            and your love gives me confidence every day.
+
+            <br><br>
+
+            No matter where life takes me,
+            I will always be grateful for having you as my father.
+
+            <br><br>
+
+            ❤️ With Love & Respect ❤️
+        </p>
+
+        <button onclick="showPage(5)">
+            Final Surprise 🎉
+        </button>
+
+    </div>
+
+</section>
+
+<!-- PAGE 5 -->
+<section class="page" id="page5">
+
+    <div class="glass final-card">
+
+        <h1 class="final-text">
+            Happy Father's Day❤️
+        </h1>
+
+        <p>
+            Thank you for being my protector,
+            mentor, guide and best friend.
+            <br><br>
+
+            I Love You Dad ❤️
+        </p>
+
+        <button onclick="showPage(1)">
+            Replay Journey 🔄
+        </button>
+
+    </div>
+
+</section>
+
+<script>
+function showPage(pageNumber){
+
+    document.querySelectorAll(".page").forEach(page=>{
+        page.classList.remove("active");
+    });
+
+    document
+    .getElementById("page"+pageNumber)
+    .classList.add("active");
+}
+</script>
+
+</body>
+</html>
+i have taken this code from instagram to make website of fathers day but where should i run this code pls help
