@@ -45,10 +45,10 @@
 </p>. 
         </p>
 
-        <button onclick="showPage(2)">
-            Begin Journey ✨
-        </button>
-
+        <button onclick="startJourney()">
+    Begin Journey ✨
+</button>
+        
     </div>
 
 </section>
@@ -169,15 +169,20 @@ No matter where life takes me, I'll always be your little girl, forever grateful
 </section>
 
 <script>
-function showPage(pageNumber){
+const music = document.getElementById("bgMusic");
 
-    document.querySelectorAll(".page").forEach(page=>{
+function startJourney() {
+    music.play().catch(error => console.log(error));
+    showPage(2);
+}
+
+function showPage(pageNumber) {
+
+    document.querySelectorAll(".page").forEach(page => {
         page.classList.remove("active");
     });
 
-    document
-    .getElementById("page"+pageNumber)
-    .classList.add("active");
+    document.getElementById("page" + pageNumber).classList.add("active");
 }
 </script>
 
